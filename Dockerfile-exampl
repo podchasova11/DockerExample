@@ -1,9 +1,14 @@
-FROM python:3.12.1-alpine3.18 # Базовый образ
+FROM python:3.12.1-alpine3.18
+#  Базовый образ
 
-WORKDIR /usr/workspace # Рабочая директория
+WORKDIR /usr/workspace
+# Рабочая директория
 
-COPY ./ /usr/workspace # Копируем все файлы в образ
+COPY ./ /usr/workspace
+# Копируем все файлы в образ
 
-RUN pip3 install requests # Устанавливаем requests
+RUN pip3 install requests
+# Устанавливаем requests
 
-CMD ["python3", "insult.py"] # Команда запуска программы
+CMD ["python3", "insult.py"]
+# Команда запуска программы
