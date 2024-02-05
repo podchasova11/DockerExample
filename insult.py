@@ -4,4 +4,3 @@ response = requests.get("https://evilinsult.com/generate_insult.php?lang=en&type
 
 print(response.json()["insult"])
 
-
