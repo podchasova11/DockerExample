@@ -12,3 +12,4 @@ RUN pip3 install requests
 
 CMD ["python3", "insult.py"]
 # Команда запуска программы, при запуске самого контейнера
+
