@@ -1,4 +1,9 @@
-FROM ubuntu:latest
-LABEL authors="Mila"
+FROM python:3.13-alpine3.21
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /user/workspace
+
+COPY ./ /usr/worspace
+
+RUN pip install requests
+
+CMD ["python", "insult.ru"]
