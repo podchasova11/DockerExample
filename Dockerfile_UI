@@ -2,7 +2,7 @@ FROM python:3.13-alpine3.21
 
 WORKDIR /user/workspace
 
-COPY ./ /usr/worspace
+COPY ./ /user/worspace
 
 RUN pip install requests
 
