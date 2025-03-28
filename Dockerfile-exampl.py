@@ -4,7 +4,6 @@ FROM python:3.12.1-alpine3.18
 WORKDIR /user/workspace
 # Рабочая директория
 
-
 COPY ./ /usr/workspace
 # Копируем все файлы в образ из нашей локальной директории
 
